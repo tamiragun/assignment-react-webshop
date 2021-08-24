@@ -1,0 +1,31 @@
+
+/*Make each product card its own card with the image on the left and
+description on the right*/
+.product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px auto ;
+    align-items: center;
+    border: solid 1px lightgray;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.product-card img {
+    padding: 20px;
+}
+.product-info {
+    padding: 0 20px;
+}
+
+/*Adapt styling to look good on large screens too*/
+@media screen and (min-width: 768px){
+    .product-card {
+        max-width: 700px;
+        flex-direction: row;
+    }
+    .product-info {
+        max-width: 400px;
+    }
+}

@@ -1,0 +1,37 @@
+/*Import Varela Round font from Google and apply it across the app*/
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+
+.App {
+  font-family: "Varela Round", sans-serif;
+  text-align: center;
+  padding-bottom: 50px;
+  background-color: rgb(218, 242, 250);
+  height: 100vh;
+}
+
+h2 {
+  margin: 30px;
+}
+
+/*Center the text in the middle of the page, some distance from the edge*/
+
+.legal,
+.company-description,
+.profile {
+  margin: 20px auto;
+  padding: 0 30px;
+}
+
+/*Adapt styling to look good on large screens too*/
+@media screen and (min-width: 768px) {
+  .legal {
+    max-width: 1200px;
+    padding: 0 50px;
+  }
+}
+
+/*Remove the bullet from the list of products*/
+.product-ul {
+  list-style: none;
+  padding: 0 30px;
+}

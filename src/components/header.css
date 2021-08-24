@@ -1,0 +1,20 @@
+/*Make the heading show the logo on the left, 
+title in the middle, and welcome message on the right*/
+
+.page-header {
+  background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 50px 20px 50px;
+  margin: 0;
+}
+
+/*Adapt styling to look good on large screens too*/
+@media screen and (min-width: 768px) {
+  .page-header {
+    flex-direction: row;
+    padding: 30px 50px 30px 50px;
+  }
+}

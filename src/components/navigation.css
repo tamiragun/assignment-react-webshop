@@ -1,0 +1,36 @@
+.nav-bar {
+  background-color: lightblue;
+  padding-bottom: 30px;
+}
+
+.nav-bar ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  font-size: large;
+  padding: 5px 20px;
+}
+
+/*When the menu item page is active, it whould not show up in the menu*/
+.selected-nav-link {
+  display: none;
+}
+
+/*Styling for larger screens*/
+@media screen and (min-width: 768px) {
+  .nav-bar {
+    padding-bottom: 35px;
+  }
+  .nav-bar ul {
+    flex-direction: row;
+  }
+}
